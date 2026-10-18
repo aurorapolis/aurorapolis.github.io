@@ -104,6 +104,7 @@
     display:grid;gap:22px;margin-top:40px;padding-top:22px;border-top:1px solid var(--ink);
   }
   @media (min-width:760px){.hero-foot{grid-template-columns:1fr auto;align-items:end}}
+  @media (min-width:1000px){.tagline .sp-br{display:none}}
   .tagline{font-size:clamp(20px,4.6vw,26px);font-weight:700;line-height:1.5}
   .stats{display:flex;gap:40px;padding:8px 8px 0 8px;position:relative;isolation:isolate;align-self:end;justify-self:start}
   .stats>*{font:inherit;font-size:12px;color:var(--sub);line-height:1.4;background:none;border:none;padding:0;text-align:left}
@@ -290,7 +291,7 @@
   </div>
   <div class="hero-foot">
     <div>
-      <p class="tagline">アプリとホームページを<br>作っています。</p>
+      <p class="tagline">アプリとホームページを<br class="sp-br">作っています。</p>
       <div class="lead">
         <p>長く製造業の現場で働いている会社員です！<br>
         仕事をしていると「こんなアプリがあれば楽なのになぁ」や、<br>
