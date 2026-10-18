@@ -229,6 +229,9 @@
     .wrap{max-width:1160px}
     .detail-grid{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:48px}
     .shots{grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);grid-template-columns:none;gap:16px}
+    /* 画像が3枚のときは、1枚目を大きく・残り2枚を右に縦積み */
+    .shots:has(> figure:nth-child(3):last-child){grid-auto-flow:row;grid-template-columns:minmax(0,2fr) minmax(0,1fr);align-items:start}
+    .shots:has(> figure:nth-child(3):last-child) > figure:first-child{grid-row:span 2}
     .detail p,.points{max-width:none}
     #futayasumi .detail-grid>:first-child{align-self:center}
   }
